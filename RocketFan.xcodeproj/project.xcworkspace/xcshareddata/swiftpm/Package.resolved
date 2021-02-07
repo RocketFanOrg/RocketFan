@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SpaceXAPI",
+        "repositoryURL": "https://github.com/RocketFanOrg/spacex-api",
+        "state": {
+          "branch": "expose-network-api",
+          "revision": "ab1e4f88d1120463db96b935fdccf55308cb92ad",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -3,16 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E85D25CEDDAE00FD6FB0 /* Core.swift */; };
+		13B1E86625CEDE5400FD6FB0 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86525CEDE5400FD6FB0 /* Fairing.swift */; };
+		13B1E86B25CEDE7C00FD6FB0 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86A25CEDE7C00FD6FB0 /* Links.swift */; };
+		13B1E87025CEE5BD00FD6FB0 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86F25CEE5BD00FD6FB0 /* Launch.swift */; };
 		13ED94B125CED23500CA7299 /* RocketFanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94B025CED23500CA7299 /* RocketFanApp.swift */; };
 		13ED94B325CED23500CA7299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94B225CED23500CA7299 /* ContentView.swift */; };
 		13ED94B525CED23600CA7299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ED94B425CED23600CA7299 /* Assets.xcassets */; };
 		13ED94B825CED23600CA7299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ED94B725CED23600CA7299 /* Preview Assets.xcassets */; };
 		13ED94C325CED23700CA7299 /* RocketFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94C225CED23700CA7299 /* RocketFanTests.swift */; };
 		13ED94CE25CED23700CA7299 /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94CD25CED23700CA7299 /* RocketFanUITests.swift */; };
+		13ED94E725CED3E200CA7299 /* SpaceXAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 13ED94E625CED3E200CA7299 /* SpaceXAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13B1E85D25CEDDAE00FD6FB0 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		13B1E86525CEDE5400FD6FB0 /* Fairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fairing.swift; sourceTree = "<group>"; };
+		13B1E86A25CEDE7C00FD6FB0 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		13B1E86F25CEE5BD00FD6FB0 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		13ED94AD25CED23500CA7299 /* RocketFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ED94B025CED23500CA7299 /* RocketFanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFanApp.swift; sourceTree = "<group>"; };
 		13ED94B225CED23500CA7299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13ED94E725CED3E200CA7299 /* SpaceXAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B1E85C25CEDD9400FD6FB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13B1E85D25CEDDAE00FD6FB0 /* Core.swift */,
+				13B1E86525CEDE5400FD6FB0 /* Fairing.swift */,
+				13B1E86A25CEDE7C00FD6FB0 /* Links.swift */,
+				13B1E86F25CEE5BD00FD6FB0 /* Launch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		13ED94A425CED23500CA7299 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +116,12 @@
 		13ED94AF25CED23500CA7299 /* RocketFan */ = {
 			isa = PBXGroup;
 			children = (
-				13ED94B025CED23500CA7299 /* RocketFanApp.swift */,
-				13ED94B225CED23500CA7299 /* ContentView.swift */,
 				13ED94B425CED23600CA7299 /* Assets.xcassets */,
+				13ED94B225CED23500CA7299 /* ContentView.swift */,
 				13ED94B925CED23600CA7299 /* Info.plist */,
+				13B1E85C25CEDD9400FD6FB0 /* Models */,
 				13ED94B625CED23600CA7299 /* Preview Content */,
+				13ED94B025CED23500CA7299 /* RocketFanApp.swift */,
 			);
 			path = RocketFan;
 			sourceTree = "<group>";
@@ -146,6 +168,9 @@
 			dependencies = (
 			);
 			name = RocketFan;
+			packageProductDependencies = (
+				13ED94E625CED3E200CA7299 /* SpaceXAPI */,
+			);
 			productName = RocketFan;
 			productReference = 13ED94AD25CED23500CA7299 /* RocketFan.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +242,9 @@
 				Base,
 			);
 			mainGroup = 13ED94A425CED23500CA7299;
+			packageReferences = (
+				13ED94E525CED3E200CA7299 /* XCRemoteSwiftPackageReference "spacex-api" */,
+			);
 			productRefGroup = 13ED94AE25CED23500CA7299 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B1E86B25CEDE7C00FD6FB0 /* Links.swift in Sources */,
+				13B1E86625CEDE5400FD6FB0 /* Fairing.swift in Sources */,
+				13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */,
 				13ED94B325CED23500CA7299 /* ContentView.swift in Sources */,
+				13B1E87025CEE5BD00FD6FB0 /* Launch.swift in Sources */,
 				13ED94B125CED23500CA7299 /* RocketFanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13ED94E525CED3E200CA7299 /* XCRemoteSwiftPackageReference "spacex-api" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RocketFanOrg/spacex-api";
+			requirement = {
+				branch = "expose-network-api";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13ED94E625CED3E200CA7299 /* SpaceXAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13ED94E525CED3E200CA7299 /* XCRemoteSwiftPackageReference "spacex-api" */;
+			productName = SpaceXAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13ED94A525CED23500CA7299 /* Project object */;
 }
