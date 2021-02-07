@@ -618,7 +618,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RocketFanOrg/spacex-api";
 			requirement = {
-				branch = "expose-network-api";
+				branch = main;
 				kind = branch;
 			};
 		};

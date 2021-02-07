@@ -5,8 +5,8 @@
         "package": "SpaceXAPI",
         "repositoryURL": "https://github.com/RocketFanOrg/spacex-api",
         "state": {
-          "branch": "expose-network-api",
-          "revision": "ab1e4f88d1120463db96b935fdccf55308cb92ad",
+          "branch": "main",
+          "revision": "3dfc29676f45fd434c55b7737970bbade7af7bad",
           "version": null
         }
       }
