@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1322DAC725D6DA4800D976D0 /* AllLaunches.json in Resources */ = {isa = PBXBuildFile; fileRef = 1322DAC625D6DA4800D976D0 /* AllLaunches.json */; };
+		1322DACD25D6DA7400D976D0 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322DACC25D6DA7400D976D0 /* Bundle-Decodable.swift */; };
+		1322DAD525D6DB1100D976D0 /* DevelopmentDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322DAD425D6DB1100D976D0 /* DevelopmentDataTests.swift */; };
 		13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E85D25CEDDAE00FD6FB0 /* Core.swift */; };
 		13B1E86625CEDE5400FD6FB0 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86525CEDE5400FD6FB0 /* Fairing.swift */; };
 		13B1E86B25CEDE7C00FD6FB0 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86A25CEDE7C00FD6FB0 /* Links.swift */; };
@@ -15,7 +18,6 @@
 		13ED94B325CED23500CA7299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94B225CED23500CA7299 /* ContentView.swift */; };
 		13ED94B525CED23600CA7299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ED94B425CED23600CA7299 /* Assets.xcassets */; };
 		13ED94B825CED23600CA7299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ED94B725CED23600CA7299 /* Preview Assets.xcassets */; };
-		13ED94C325CED23700CA7299 /* RocketFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94C225CED23700CA7299 /* RocketFanTests.swift */; };
 		13ED94CE25CED23700CA7299 /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94CD25CED23700CA7299 /* RocketFanUITests.swift */; };
 		13ED94E725CED3E200CA7299 /* SpaceXAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 13ED94E625CED3E200CA7299 /* SpaceXAPI */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1322DAC625D6DA4800D976D0 /* AllLaunches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllLaunches.json; sourceTree = "<group>"; };
+		1322DACC25D6DA7400D976D0 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		1322DAD425D6DB1100D976D0 /* DevelopmentDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentDataTests.swift; sourceTree = "<group>"; };
 		13B1E85D25CEDDAE00FD6FB0 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		13B1E86525CEDE5400FD6FB0 /* Fairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fairing.swift; sourceTree = "<group>"; };
 		13B1E86A25CEDE7C00FD6FB0 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
@@ -49,7 +54,6 @@
 		13ED94B725CED23600CA7299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		13ED94B925CED23600CA7299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13ED94BE25CED23700CA7299 /* RocketFanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13ED94C225CED23700CA7299 /* RocketFanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFanTests.swift; sourceTree = "<group>"; };
 		13ED94C425CED23700CA7299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13ED94C925CED23700CA7299 /* RocketFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ED94CD25CED23700CA7299 /* RocketFanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFanUITests.swift; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1322DACB25D6DA5100D976D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1322DACC25D6DA7400D976D0 /* Bundle-Decodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		13B1E85C25CEDD9400FD6FB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +128,10 @@
 		13ED94AF25CED23500CA7299 /* RocketFan */ = {
 			isa = PBXGroup;
 			children = (
+				1322DAC625D6DA4800D976D0 /* AllLaunches.json */,
 				13ED94B425CED23600CA7299 /* Assets.xcassets */,
 				13ED94B225CED23500CA7299 /* ContentView.swift */,
+				1322DACB25D6DA5100D976D0 /* Extensions */,
 				13ED94B925CED23600CA7299 /* Info.plist */,
 				13B1E85C25CEDD9400FD6FB0 /* Models */,
 				13ED94B625CED23600CA7299 /* Preview Content */,
@@ -137,8 +151,8 @@
 		13ED94C125CED23700CA7299 /* RocketFanTests */ = {
 			isa = PBXGroup;
 			children = (
-				13ED94C225CED23700CA7299 /* RocketFanTests.swift */,
 				13ED94C425CED23700CA7299 /* Info.plist */,
+				1322DAD425D6DB1100D976D0 /* DevelopmentDataTests.swift */,
 			);
 			path = RocketFanTests;
 			sourceTree = "<group>";
@@ -225,6 +239,7 @@
 					};
 					13ED94BD25CED23700CA7299 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 13ED94AC25CED23500CA7299;
 					};
 					13ED94C825CED23700CA7299 = {
@@ -261,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1322DAC725D6DA4800D976D0 /* AllLaunches.json in Resources */,
 				13ED94B825CED23600CA7299 /* Preview Assets.xcassets in Resources */,
 				13ED94B525CED23600CA7299 /* Assets.xcassets in Resources */,
 			);
@@ -292,6 +308,7 @@
 				13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */,
 				13ED94B325CED23500CA7299 /* ContentView.swift in Sources */,
 				13B1E87025CEE5BD00FD6FB0 /* Launch.swift in Sources */,
+				1322DACD25D6DA7400D976D0 /* Bundle-Decodable.swift in Sources */,
 				13ED94B125CED23500CA7299 /* RocketFanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13ED94C325CED23700CA7299 /* RocketFanTests.swift in Sources */,
+				1322DAD525D6DB1100D976D0 /* DevelopmentDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +510,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZG8CFZU5K;
 				INFOPLIST_FILE = RocketFanTests/Info.plist;
@@ -504,6 +522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rocketfanOrg.RocketFanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RocketFan.app/RocketFan";
@@ -515,6 +534,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZG8CFZU5K;
 				INFOPLIST_FILE = RocketFanTests/Info.plist;

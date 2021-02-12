@@ -69,3 +69,9 @@ extension Launch {
         let reason: String
     }
 }
+
+// MARK: - Sample data
+extension Launch {
+    static let allLaunches: [Launch] = Bundle.main.decode([Launch].self, from: "AllLaunches.json")
+    static let example = allLaunches[0]
+}
