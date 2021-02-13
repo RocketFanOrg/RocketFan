@@ -12,7 +12,7 @@ RocketFan 🚀 is an iOS application that uses the [Unofficial SpaceX Api](https
 # Requirements
 
 * Xcode 12.3 or greater
-* iOS 13.0 or greater
+* iOS 14.0 or greater
 
 ## Configuration
 
