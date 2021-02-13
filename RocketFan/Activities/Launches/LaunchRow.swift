@@ -1,10 +1,3 @@
-//
-//  LaunchRow.swift
-//  RocketFan
-//
-//  Created by Robert Clegg on 2021/02/13.
-//
-
 import SwiftUI
 
 struct LaunchRow: View {
