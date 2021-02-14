@@ -23,6 +23,5 @@ You can also change the `PRODUCT_BUNDLE_IDENTIFIER` here if you need to.
 
 We would love you for the contribution to **RocketFan**, check the ``LICENSE``  and ``CONTRIBUTING`` files for more info.
 
-
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
