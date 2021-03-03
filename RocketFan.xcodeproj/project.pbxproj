@@ -11,10 +11,14 @@
 		1322DACD25D6DA7400D976D0 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322DACC25D6DA7400D976D0 /* Bundle-Decodable.swift */; };
 		1322DAD525D6DB1100D976D0 /* DevelopmentDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322DAD425D6DB1100D976D0 /* DevelopmentDataTests.swift */; };
 		13448D6825D7D085006ECB9E /* LaunchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13448D6725D7D085006ECB9E /* LaunchRow.swift */; };
+		1389728A25EFC091006F90D8 /* UpcomingLaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389728925EFC091006F90D8 /* UpcomingLaunchesViewModel.swift */; };
+		1389728F25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389728E25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift */; };
+		138D956725DB0DBB008CAF18 /* UpcomingLaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D956625DB0DBB008CAF18 /* UpcomingLaunchesView.swift */; };
 		13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E85D25CEDDAE00FD6FB0 /* Core.swift */; };
 		13B1E86625CEDE5400FD6FB0 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86525CEDE5400FD6FB0 /* Fairing.swift */; };
 		13B1E86B25CEDE7C00FD6FB0 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86A25CEDE7C00FD6FB0 /* Links.swift */; };
 		13B1E87025CEE5BD00FD6FB0 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86F25CEE5BD00FD6FB0 /* Launch.swift */; };
+		13EB88F925EFD80A0030A7C9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 13EB88F825EFD80A0030A7C9 /* Kingfisher */; };
 		13ED94B125CED23500CA7299 /* RocketFanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94B025CED23500CA7299 /* RocketFanApp.swift */; };
 		13ED94B325CED23500CA7299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94B225CED23500CA7299 /* ContentView.swift */; };
 		13ED94B525CED23600CA7299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ED94B425CED23600CA7299 /* Assets.xcassets */; };
@@ -45,6 +49,9 @@
 		1322DACC25D6DA7400D976D0 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		1322DAD425D6DB1100D976D0 /* DevelopmentDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentDataTests.swift; sourceTree = "<group>"; };
 		13448D6725D7D085006ECB9E /* LaunchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRow.swift; sourceTree = "<group>"; };
+		1389728925EFC091006F90D8 /* UpcomingLaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesViewModel.swift; sourceTree = "<group>"; };
+		1389728E25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesRepo.swift; sourceTree = "<group>"; };
+		138D956625DB0DBB008CAF18 /* UpcomingLaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesView.swift; sourceTree = "<group>"; };
 		13B1E85D25CEDDAE00FD6FB0 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		13B1E86525CEDE5400FD6FB0 /* Fairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fairing.swift; sourceTree = "<group>"; };
 		13B1E86A25CEDE7C00FD6FB0 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EB88F925EFD80A0030A7C9 /* Kingfisher in Frameworks */,
 				13ED94E725CED3E200CA7299 /* SpaceXAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				13448D6725D7D085006ECB9E /* LaunchRow.swift */,
+				138D956625DB0DBB008CAF18 /* UpcomingLaunchesView.swift */,
+				1389728925EFC091006F90D8 /* UpcomingLaunchesViewModel.swift */,
+				1389728E25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift */,
 			);
 			path = Launches;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 			name = RocketFan;
 			packageProductDependencies = (
 				13ED94E625CED3E200CA7299 /* SpaceXAPI */,
+				13EB88F825EFD80A0030A7C9 /* Kingfisher */,
 			);
 			productName = RocketFan;
 			productReference = 13ED94AD25CED23500CA7299 /* RocketFan.app */;
@@ -278,6 +290,7 @@
 			mainGroup = 13ED94A425CED23500CA7299;
 			packageReferences = (
 				13ED94E525CED3E200CA7299 /* XCRemoteSwiftPackageReference "spacex-api" */,
+				13EB88F725EFD80A0030A7C9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 13ED94AE25CED23500CA7299 /* Products */;
 			projectDirPath = "";
@@ -327,9 +340,12 @@
 				13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */,
 				13ED94B325CED23500CA7299 /* ContentView.swift in Sources */,
 				13B1E87025CEE5BD00FD6FB0 /* Launch.swift in Sources */,
+				138D956725DB0DBB008CAF18 /* UpcomingLaunchesView.swift in Sources */,
+				1389728F25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift in Sources */,
 				13448D6825D7D085006ECB9E /* LaunchRow.swift in Sources */,
 				1322DACD25D6DA7400D976D0 /* Bundle-Decodable.swift in Sources */,
 				13ED94B125CED23500CA7299 /* RocketFanApp.swift in Sources */,
+				1389728A25EFC091006F90D8 /* UpcomingLaunchesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,6 +670,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		13EB88F725EFD80A0030A7C9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
 		13ED94E525CED3E200CA7299 /* XCRemoteSwiftPackageReference "spacex-api" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RocketFanOrg/spacex-api";
@@ -665,6 +689,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		13EB88F825EFD80A0030A7C9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13EB88F725EFD80A0030A7C9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		13ED94E625CED3E200CA7299 /* SpaceXAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 13ED94E525CED3E200CA7299 /* XCRemoteSwiftPackageReference "spacex-api" */;
