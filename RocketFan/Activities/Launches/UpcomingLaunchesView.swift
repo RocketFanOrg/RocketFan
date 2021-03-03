@@ -17,7 +17,7 @@ struct UpcomingLaunchesView: View {
                 }
                 
                 Section(header: Text("Later")) {
-                    ForEach(viewModel.upCominglaunches, id: \.id) { launch in
+                    ForEach(viewModel.upcomingLaunches, id: \.id) { launch in
                         NavigationLink(destination: Text(launch.name)) {
                             LaunchRow(launch: launch, dateFormatter: Self.launchDateFormater)
                         }

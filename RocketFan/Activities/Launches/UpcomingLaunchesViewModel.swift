@@ -6,7 +6,7 @@ extension UpcomingLaunchesView {
         private lazy var repo = UpcomingLaunchesRepo()
         private var nextLaunchId = ""
         
-        @Published var upCominglaunches = [Launch]()
+        @Published var upcomingLaunches = [Launch]()
         @Published var nextLaunch: Launch?
         
         /// Loads the next launch as well as all launches
@@ -24,7 +24,7 @@ extension UpcomingLaunchesView {
                         
                         //No need to include next launch in upcomingLaunches - as we already show next launch on screen
                         upcomingLaunches.removeAll(where: {$0.id == self.nextLaunchId})
-                        self.upCominglaunches = upcomingLaunches
+                        self.upcomingLaunches = upcomingLaunches
                     }
                 } catch {
                     print(error.localizedDescription)
