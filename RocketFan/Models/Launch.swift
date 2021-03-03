@@ -19,6 +19,15 @@ struct Launch: Codable, Identifiable {
     let datePrecision: DatePrecision
     let upcoming: Bool
 
+    var smallPatchURL: URL? {
+        guard let patch = links.patch,
+              let smallPatchURL = patch.small else {
+            return nil
+        }
+        
+        return URL(string: smallPatchURL)
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id
         case fairings
@@ -74,4 +83,15 @@ extension Launch {
 extension Launch {
     static let allLaunches: [Launch] = Bundle.main.decode([Launch].self, from: "AllLaunches.json")
     static let example = allLaunches[0]
+}
+
+extension Launch {
+    func formattedLaunchDate(using formatter: DateFormatter) -> String {
+        guard let date = launchDate else {
+            return "TBA"
+        }
+        
+        formatter.setLocalizedDateFormatFromTemplate("MMMM dd YYY")
+        return formatter.string(from: date)
+    }
 }

@@ -1,30 +1,35 @@
 import SwiftUI
+import Kingfisher
 
 struct LaunchRow: View {
     let launch: Launch
+    let dateFormatter: DateFormatter
 
     var body: some View {
         VStack {
             HStack {
-                Image("example_patch")
+                if let patch = launch.smallPatchURL {
+                KFImage(patch)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 80, height: 80)
-                    .padding()
-
+                    .frame(width: 70, height: 70)
+                    .padding(.trailing)
+                } else {
+                    Circle()
+                        .fill()
+                        .foregroundColor(.secondary)
+                        .frame(width: 60, height: 60)
+                        .padding(.trailing)
+                }
+                
                 VStack(alignment: .leading) {
                     Text(launch.name)
                         .font(.title2)
                         .foregroundColor(.primary)
                         .padding(.top)
-                    Text("October 6th 2020")
+                    Text(launch.formattedLaunchDate(using: dateFormatter))
                         .font(.title3)
                         .foregroundColor(.secondary)
-                    if let details = launch.details {
-                    Text(details)
-                        .lineLimit(2)
-                        .padding([.top, .bottom])
-                    }
                 }
             }
         }
@@ -33,7 +38,7 @@ struct LaunchRow: View {
 
 struct LaunchRow_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchRow(launch: .example)
+        LaunchRow(launch: .example, dateFormatter: DateFormatter())
             .previewLayout(.fixed(width: 470, height: 150))
     }
 }
