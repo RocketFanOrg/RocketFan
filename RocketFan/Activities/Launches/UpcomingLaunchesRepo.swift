@@ -1,10 +1,3 @@
-//
-//  UpcomingLaunchesRepo.swift
-//  RocketFan
-//
-//  Created by Robert Clegg on 2021/03/03.
-//
-
 import Foundation
 import SpaceXAPI
 

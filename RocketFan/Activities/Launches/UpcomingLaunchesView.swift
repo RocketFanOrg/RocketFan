@@ -1,10 +1,3 @@
-//
-//  UpcomingLaunchesView.swift
-//  RocketFan
-//
-//  Created by Robert Clegg on 2021/02/15.
-//
-
 import SwiftUI
 
 struct UpcomingLaunchesView: View {
