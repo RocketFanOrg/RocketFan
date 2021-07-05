@@ -18,6 +18,7 @@ struct Launch: Codable, Identifiable {
     let launchDate: Date?
     let datePrecision: DatePrecision
     let upcoming: Bool
+    let failures: [Failure]?
 
     var smallPatchURL: URL? {
         guard let patch = links.patch,
@@ -46,6 +47,7 @@ struct Launch: Codable, Identifiable {
         case launchDate = "date_unix"
         case datePrecision = "date_precision"
         case upcoming
+        case failures
     }
 }
 
@@ -82,16 +84,14 @@ extension Launch {
 // MARK: - Sample data
 extension Launch {
     static let allLaunches: [Launch] = Bundle.main.decode([Launch].self, from: "AllLaunches.json")
-    static let example = allLaunches[0]
+    static let example = allLaunches[10]
 }
 
 extension Launch {
-    func formattedLaunchDate(using formatter: DateFormatter) -> String {
+    var formattedLaunchDate: String {
         guard let date = launchDate else {
             return "TBA"
         }
-        
-        formatter.setLocalizedDateFormatFromTemplate("MMMM dd YYY")
-        return formatter.string(from: date)
+        return date.formatted(date: .abbreviated, time: .omitted)
     }
 }
