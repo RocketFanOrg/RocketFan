@@ -1,7 +1,7 @@
 import Foundation
 import SpaceXAPI
 
-final class UpcomingLaunchesRepo {
+final class LaunchesRepo {
     private lazy var api = SpaceXAPI()
     
     /// Fetches all past and future launches
@@ -20,5 +20,11 @@ final class UpcomingLaunchesRepo {
     /// - Parameter completion: Completion handler for when the API returns
     func fetchUpcomingLaunches(completion: @escaping (Result<[Launch], Error>) -> Void) {
         api.get(endpoint: .upcomingLaunches, completion: completion)
+    }
+
+    /// Fetches past launches
+    /// - Parameter completion: Completion handler for when the API returns
+    func pastLaunches(completion: @escaping (Result<[Launch], Error>) -> Void) {
+        api.get(endpoint: .pastLaunches, completion: completion)
     }
 }

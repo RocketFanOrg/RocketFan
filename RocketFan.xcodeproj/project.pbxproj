@@ -10,14 +10,20 @@
 		1322DAC725D6DA4800D976D0 /* AllLaunches.json in Resources */ = {isa = PBXBuildFile; fileRef = 1322DAC625D6DA4800D976D0 /* AllLaunches.json */; };
 		1322DACD25D6DA7400D976D0 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322DACC25D6DA7400D976D0 /* Bundle-Decodable.swift */; };
 		1322DAD525D6DB1100D976D0 /* DevelopmentDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1322DAD425D6DB1100D976D0 /* DevelopmentDataTests.swift */; };
+		1332DB222683778E007C5B7F /* LaunchStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332DB212683778E007C5B7F /* LaunchStatusView.swift */; };
 		13448D6825D7D085006ECB9E /* LaunchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13448D6725D7D085006ECB9E /* LaunchRow.swift */; };
-		1389728A25EFC091006F90D8 /* UpcomingLaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389728925EFC091006F90D8 /* UpcomingLaunchesViewModel.swift */; };
-		1389728F25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389728E25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift */; };
-		138D956725DB0DBB008CAF18 /* UpcomingLaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D956625DB0DBB008CAF18 /* UpcomingLaunchesView.swift */; };
+		1389728A25EFC091006F90D8 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389728925EFC091006F90D8 /* LaunchesViewModel.swift */; };
+		1389728F25EFC0C0006F90D8 /* LaunchesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1389728E25EFC0C0006F90D8 /* LaunchesRepo.swift */; };
+		138D956725DB0DBB008CAF18 /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D956625DB0DBB008CAF18 /* LaunchesView.swift */; };
 		13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E85D25CEDDAE00FD6FB0 /* Core.swift */; };
 		13B1E86625CEDE5400FD6FB0 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86525CEDE5400FD6FB0 /* Fairing.swift */; };
 		13B1E86B25CEDE7C00FD6FB0 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86A25CEDE7C00FD6FB0 /* Links.swift */; };
 		13B1E87025CEE5BD00FD6FB0 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1E86F25CEE5BD00FD6FB0 /* Launch.swift */; };
+		13E84186268611BC00AD93A8 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E84185268611BC00AD93A8 /* LaunchDetailView.swift */; };
+		13E84188268616A300AD93A8 /* LaunchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E84187268616A300AD93A8 /* LaunchDetailViewModel.swift */; };
+		13E8418B2686186E00AD93A8 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8418A2686186E00AD93A8 /* Rocket.swift */; };
+		13E8418D26861D3400AD93A8 /* RocketsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8418C26861D3400AD93A8 /* RocketsRepo.swift */; };
+		13E8418F2686255400AD93A8 /* RocketNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E8418E2686255400AD93A8 /* RocketNameView.swift */; };
 		13EB88F925EFD80A0030A7C9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 13EB88F825EFD80A0030A7C9 /* Kingfisher */; };
 		13ED94B125CED23500CA7299 /* RocketFanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94B025CED23500CA7299 /* RocketFanApp.swift */; };
 		13ED94B325CED23500CA7299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ED94B225CED23500CA7299 /* ContentView.swift */; };
@@ -48,14 +54,20 @@
 		1322DAC625D6DA4800D976D0 /* AllLaunches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllLaunches.json; sourceTree = "<group>"; };
 		1322DACC25D6DA7400D976D0 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		1322DAD425D6DB1100D976D0 /* DevelopmentDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentDataTests.swift; sourceTree = "<group>"; };
+		1332DB212683778E007C5B7F /* LaunchStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStatusView.swift; sourceTree = "<group>"; };
 		13448D6725D7D085006ECB9E /* LaunchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRow.swift; sourceTree = "<group>"; };
-		1389728925EFC091006F90D8 /* UpcomingLaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesViewModel.swift; sourceTree = "<group>"; };
-		1389728E25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesRepo.swift; sourceTree = "<group>"; };
-		138D956625DB0DBB008CAF18 /* UpcomingLaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingLaunchesView.swift; sourceTree = "<group>"; };
+		1389728925EFC091006F90D8 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		1389728E25EFC0C0006F90D8 /* LaunchesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRepo.swift; sourceTree = "<group>"; };
+		138D956625DB0DBB008CAF18 /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
 		13B1E85D25CEDDAE00FD6FB0 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		13B1E86525CEDE5400FD6FB0 /* Fairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fairing.swift; sourceTree = "<group>"; };
 		13B1E86A25CEDE7C00FD6FB0 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		13B1E86F25CEE5BD00FD6FB0 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		13E84185268611BC00AD93A8 /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
+		13E84187268616A300AD93A8 /* LaunchDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewModel.swift; sourceTree = "<group>"; };
+		13E8418A2686186E00AD93A8 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		13E8418C26861D3400AD93A8 /* RocketsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsRepo.swift; sourceTree = "<group>"; };
+		13E8418E2686255400AD93A8 /* RocketNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketNameView.swift; sourceTree = "<group>"; };
 		13ED94AD25CED23500CA7299 /* RocketFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ED94B025CED23500CA7299 /* RocketFanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketFanApp.swift; sourceTree = "<group>"; };
 		13ED94B225CED23500CA7299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,10 +116,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1332DB2526837C8D007C5B7F /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				138D956625DB0DBB008CAF18 /* LaunchesView.swift */,
+				1389728925EFC091006F90D8 /* LaunchesViewModel.swift */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
 		13448D6525D7D052006ECB9E /* Activities */ = {
 			isa = PBXGroup;
 			children = (
 				13448D6625D7D05A006ECB9E /* Launches */,
+				13E84189268617CA00AD93A8 /* LaunchDetails */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -115,10 +137,10 @@
 		13448D6625D7D05A006ECB9E /* Launches */ = {
 			isa = PBXGroup;
 			children = (
+				1332DB2526837C8D007C5B7F /* Launches */,
+				1389728E25EFC0C0006F90D8 /* LaunchesRepo.swift */,
 				13448D6725D7D085006ECB9E /* LaunchRow.swift */,
-				138D956625DB0DBB008CAF18 /* UpcomingLaunchesView.swift */,
-				1389728925EFC091006F90D8 /* UpcomingLaunchesViewModel.swift */,
-				1389728E25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift */,
+				1332DB212683778E007C5B7F /* LaunchStatusView.swift */,
 			);
 			path = Launches;
 			sourceTree = "<group>";
@@ -130,8 +152,20 @@
 				13B1E86525CEDE5400FD6FB0 /* Fairing.swift */,
 				13B1E86A25CEDE7C00FD6FB0 /* Links.swift */,
 				13B1E86F25CEE5BD00FD6FB0 /* Launch.swift */,
+				13E8418A2686186E00AD93A8 /* Rocket.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		13E84189268617CA00AD93A8 /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				13E84185268611BC00AD93A8 /* LaunchDetailView.swift */,
+				13E84187268616A300AD93A8 /* LaunchDetailViewModel.swift */,
+				13E8418C26861D3400AD93A8 /* RocketsRepo.swift */,
+				13E8418E2686255400AD93A8 /* RocketNameView.swift */,
+			);
+			path = LaunchDetails;
 			sourceTree = "<group>";
 		};
 		13ED94A425CED23500CA7299 = {
@@ -338,14 +372,20 @@
 				13B1E86B25CEDE7C00FD6FB0 /* Links.swift in Sources */,
 				13B1E86625CEDE5400FD6FB0 /* Fairing.swift in Sources */,
 				13B1E85E25CEDDAE00FD6FB0 /* Core.swift in Sources */,
+				13E8418B2686186E00AD93A8 /* Rocket.swift in Sources */,
+				1332DB222683778E007C5B7F /* LaunchStatusView.swift in Sources */,
 				13ED94B325CED23500CA7299 /* ContentView.swift in Sources */,
 				13B1E87025CEE5BD00FD6FB0 /* Launch.swift in Sources */,
-				138D956725DB0DBB008CAF18 /* UpcomingLaunchesView.swift in Sources */,
-				1389728F25EFC0C0006F90D8 /* UpcomingLaunchesRepo.swift in Sources */,
+				138D956725DB0DBB008CAF18 /* LaunchesView.swift in Sources */,
+				1389728F25EFC0C0006F90D8 /* LaunchesRepo.swift in Sources */,
+				13E84188268616A300AD93A8 /* LaunchDetailViewModel.swift in Sources */,
 				13448D6825D7D085006ECB9E /* LaunchRow.swift in Sources */,
 				1322DACD25D6DA7400D976D0 /* Bundle-Decodable.swift in Sources */,
 				13ED94B125CED23500CA7299 /* RocketFanApp.swift in Sources */,
-				1389728A25EFC091006F90D8 /* UpcomingLaunchesViewModel.swift in Sources */,
+				13E8418D26861D3400AD93A8 /* RocketsRepo.swift in Sources */,
+				1389728A25EFC091006F90D8 /* LaunchesViewModel.swift in Sources */,
+				13E84186268611BC00AD93A8 /* LaunchDetailView.swift in Sources */,
+				13E8418F2686255400AD93A8 /* RocketNameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -487,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -507,7 +547,7 @@
 				DEVELOPMENT_TEAM = CZG8CFZU5K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RocketFan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,7 +569,7 @@
 				DEVELOPMENT_TEAM = CZG8CFZU5K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RocketFan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,7 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZG8CFZU5K;
 				INFOPLIST_FILE = RocketFanTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,7 +614,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZG8CFZU5K;
 				INFOPLIST_FILE = RocketFanTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

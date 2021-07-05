@@ -3,7 +3,15 @@ import Kingfisher
 
 struct LaunchRow: View {
     let launch: Launch
-    let dateFormatter: DateFormatter
+    var isNextLaunch = false
+
+    private var formattedLaunchDate: String {
+        guard let launchDate = launch.launchDate, isNextLaunch else {
+            return launch.formattedLaunchDate
+        }
+
+        return launchDate.formatted(.relative(presentation: .named, unitsStyle: .wide))
+    }
 
     var body: some View {
         VStack {
@@ -27,7 +35,7 @@ struct LaunchRow: View {
                         .font(.title2)
                         .foregroundColor(.primary)
                         .padding(.top)
-                    Text(launch.formattedLaunchDate(using: dateFormatter))
+                    Text(formattedLaunchDate)
                         .font(.title3)
                         .foregroundColor(.secondary)
                 }
@@ -38,7 +46,7 @@ struct LaunchRow: View {
 
 struct LaunchRow_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchRow(launch: .example, dateFormatter: DateFormatter())
+        LaunchRow(launch: .example, isNextLaunch: true)
             .previewLayout(.fixed(width: 470, height: 150))
     }
 }
